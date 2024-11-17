@@ -171,17 +171,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1438136173140771368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c355cf67d54abee4aae3b97fd7e93987, type: 3}
+  m_Script: {fileID: 11500000, guid: 96972e7f1c1f3f944a98f2989dae32dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  timeToChange: 2
-  horizontal: 1
-  smokeParticleEffect: {fileID: 3011383789571276131}
-  fixedParticleEffect: {fileID: 2688776450615711917, guid: 96e9cd9955be74842b5d6b2e427ffe16,
-    type: 3}
-  hitSound: {fileID: 8300000, guid: 683e01d57e63fe749866ca4fd3cc424c, type: 3}
-  fixedSound: {fileID: 8300000, guid: 4e356d8e36201c14da953082c4d569ab, type: 3}
 --- !u!95 &6950299971105241840
 Animator:
   serializedVersion: 5
@@ -213,7 +205,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9645ade057726c6428a54cc571053c6d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fc76f648365b141769894a3d55c008ab, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -221,7 +213,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 95
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 10
@@ -372,12 +364,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 848f0e506df10d7498e310399139d6ae, type: 3}
---- !u!1 &3011383789571276131 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5942930253851249641, guid: 848f0e506df10d7498e310399139d6ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 8913487939682055818}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7684009071759711431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1229490962718779981, guid: 848f0e506df10d7498e310399139d6ae,
