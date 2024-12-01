@@ -57,7 +57,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         MoveAction.Enable();
-        launchAction.Enable();
+
+        //D.W Disabled Launch Until Wrench is Picked up
+        launchAction.Disable();
         launchAction.performed += Launch;
 
         talkAction.Enable();
@@ -145,6 +147,7 @@ public class PlayerController : MonoBehaviour
 //A.O. ADDED for damage burst effect!
             GameObject psHealthDOWN = Instantiate(psHealthDOWNPrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
             animator.SetTrigger("Hit");
+            audioSource.Play();
         }
 
 //A.O. ADDED for healthup burst effect!
@@ -173,12 +176,12 @@ public class PlayerController : MonoBehaviour
 
     void Launch(InputAction.CallbackContext context)
     {
-        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
-        Projectile projectile = projectileObject.GetComponent<Projectile>();
-        projectile.Launch(moveDirection, 300);
+            GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            Projectile projectile = projectileObject.GetComponent<Projectile>();
+            projectile.Launch(moveDirection, 300);
 
 
-        animator.SetTrigger("Launch");
+            animator.SetTrigger("Launch");
     }
 
 
@@ -204,6 +207,12 @@ public class PlayerController : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
     }
+
+    public void WrenchHold()
+    {
+        launchAction.Enable();
+    }
+
 }
 
 

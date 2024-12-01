@@ -20,8 +20,11 @@ public class EnemyController : MonoBehaviour
     private PlayerController rubyController;
 
 //D.W. ADDED for Robot Smoke
-    public ParticleSystem Smoke; 
+    public ParticleSystem Smoke;
     //Not totally necessary, but if I might revamp the system later on to allow you to input a seperate game object
+
+    //Audio Source Collection
+    AudioSource audioSource;
 
 
 
@@ -32,8 +35,12 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         timer = changeTime;
 
+        audioSource = GetComponent<AudioSource>();
 
-//A.O. ADDED for RubyController
+
+
+
+        //A.O. ADDED for RubyController
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
         if (rubyControllerObject != null)
 
@@ -59,6 +66,7 @@ public class EnemyController : MonoBehaviour
         {
             Smoke.Play(true);
         }
+       
 
     }
 
@@ -70,6 +78,7 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
+
 
     }
 
@@ -133,6 +142,9 @@ public class EnemyController : MonoBehaviour
         GetComponent<Rigidbody2D>().simulated = false;
         animator.SetTrigger("Fixed");
 
+        audioSource.Play();
+
+
         //D.W. ADDED for Robot Smoke
         if (aggressive == false)
         {
@@ -145,7 +157,12 @@ public class EnemyController : MonoBehaviour
         {
                 rubyController.ChangeScore(+1);
         }
+
     }
 
 
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
 }
