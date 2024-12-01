@@ -1,0 +1,60 @@
+							
+							-Read Me-
+							
+						Angelina O’Toole
+		My gameplay modification that I believed to fit the ‘Significant and Original’ 
+criteria is that I utilized an existing asset from the Sugar Land game files and coded 
+the candy to be a speed power-up! I included one of the two required sound effects on 
+this, when the candy is picked up it sounds like a sudden woosh of energy overcoming 
+the player and doubles their speed from the PowerPickup script I created! I also created 
+a burst visual effect upon pickup of the powerup.
+I added another audio effect on a vending machine asset I used (also from the Sugar Land 
+game files) and I believe this meets criteria for the sound effect even though it loops, 
+the sounds are only heard by the player when they get close enough and I located a script 
+for there to be multiple audio clips that randomly play while the player is close.
+Lastly, one more visual element was added by me which is animating the VenDing machine to 
+appear as an NPC in the land and could potentially be developed into a place where the player 
+could buy items to help in game progression. This asset came with an animator on it already 
+however I changed the sprites that are rendered to fit the positioning of the VenDing machine 
+more appropriately!
+
+
+					Sources:
+Girardot, O. (2019, October 23). Free sound effects pack: Audio sound FX. Unity Asset Store. 
+https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776
+
+Nirvanage. (2016a, June 1). Future beeps lite edition: Audio sound FX. Unity Asset Store.
+ https://assetstore.unity.com/packages/audio/sound-fx/future-beeps-lite-edition-63357
+
+
+						Daelyn Wilson
+	To start I knew from the beginning my goal. I was not able to add it on my last 
+project so this time I was commited to finally making a key system (or learn it). 
+Originally I did have a simple invintory system I added that would detect if you collided 
+with the Wrench object. I also completed the art of it myself, so no source there! However,
+when I was looking over my code I realized I had over complicated it for myself and just had
+to make it so the launch action was disabled until you came into contact with the Wrench, so
+I made it less crazy. I changed the dialogue of the NPC to fit this new narrative, so when you
+talk with them they will say the Wrench is in the park somewhere. Can't fix the robots until 
+you find it, so I felt that was a significant change. I took your automatic skill. 
+	Animation wise I added a frog to the park area and a bunny that will run across the screen
+when you "spook" it. It's meant to act as a fun way to add more life to the park areas. I 
+made all the art for it as basic pixel art isn't too hard for me to complete and does not 
+require too much time. I used the same method as the Jambidle NPC animation, so it just has 
+different sprites. I did not want to get too complicated... I say knowing full well I added 
+a condition script to "spook" the rabbit. That's all it does though. It detects if the player
+or someone collides with the 2D object. Bunny then runs.
+	Audio I had a couple ideas for and I did source these. They were both found on Pixabay.
+I did play around with finding different music, but none of them I could find would loop in a
+way that made sense or not jarring. I added a sound effect to picking up the wrench. The file
+is sort of quiet, but it's there. I also added it so that when you fix the Robots a wrench sound
+plays to sort of signify that you fixed the robot. I was tempted to doing a funny metal clang,
+but it would get old fast and I was checking it worked everytime. I stuck with the narrative.
+	
+	
+						Sources:
+AlsakaRobotics (FreeSound)(August 25, 2022) "racget socket wrench tool" Pixabay 
+https://pixabay.com/sound-effects/ratchet-socket-wrench-tool-95253/
+
+Mricky13 (FreeSound)(Autust 9, 2021) "Item Equip" Pixabay
+https://pixabay.com/sound-effects/item-equip-6904/
